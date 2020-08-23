@@ -38,6 +38,19 @@ public class AbstractEvent {
     }
 
     public void publish(String json){
+
+//        ProductChanged productChanged = new ProductChanged();
+//        productChanged.setProductId(this.getId());
+//        productChanged.setProductName(this.getName());
+//        productChanged.setProductStock(this.getStock());
+//        ObjectMapper objectMapper = new ObjectMapper();
+//
+//        try {
+//            json = objectMapper.writeValueAsString(productChanged);
+//        } catch (JsonProcessingException e) {
+//            throw new RuntimeException("JSON format exception", e);
+//        }
+
         if( json != null ){
 
             /**
