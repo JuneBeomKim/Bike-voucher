@@ -1,6 +1,10 @@
 package BikeRental;
 
+
+
 public class VoucherMinus extends AbstractEvent {
+//--> VoucherMinus, VoucherPlus가 함께 호출되어 VoucherUpdate에서 처리하도록 변경 (20.08.23)
+//--> 사용하지 않음
 
     private Long id;
     private Long userId;
