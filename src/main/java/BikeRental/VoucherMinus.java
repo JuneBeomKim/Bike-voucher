@@ -21,6 +21,10 @@ public class VoucherMinus extends AbstractEvent {
         this.userId = userId;
     }
     public Long getVoucherCnt() {
+        //Voucher 개수 1만큼 감소
+        //0보다 작은 경우는 0 return
+        if (voucherCnt>0)
+            voucherCnt--;
         return voucherCnt;
     }
 
