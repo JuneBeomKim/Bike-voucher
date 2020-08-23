@@ -25,10 +25,15 @@ public class GetStatus extends AbstractEvent {
         this.userId = userId;
     }
     public Long getVoucherCnt() {
+        //voucherCnt 가 0보다 작은 경우 어떤 처리 필요??
+        // 현재는 불필요
+        //............
+
         return voucherCnt;
     }
 
     public void setVoucherCnt(Long voucherCnt) {
+
         this.voucherCnt = voucherCnt;
     }
 }
