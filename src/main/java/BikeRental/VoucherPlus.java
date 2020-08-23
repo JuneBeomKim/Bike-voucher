@@ -21,6 +21,8 @@ public class VoucherPlus extends AbstractEvent {
         this.userId = userId;
     }
     public Long getVoucherCnt() {
+        //Voucher 개수 1만큼 증가
+        voucherCnt++;
         return voucherCnt;
     }
 
